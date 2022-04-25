@@ -349,7 +349,8 @@ header nav .icons .fa:hover{
         display: block;
     }
     header nav .nav-links{
-        display: flex;
+        display: none;
+        /* display: flex; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -360,11 +361,11 @@ header nav .icons .fa:hover{
         position: absolute;
         top: 0;
         left: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 );
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 ); */
     }
     
     header nav .nav-links.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0 );
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0 ); */
     }
     header nav .nav-links li{
         display: block;
