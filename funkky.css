@@ -382,8 +382,25 @@ header nav .icons .fa:hover{
         width: 100%;
         margin-bottom: 30px;
     }
-    .about .container .img-wrapper{{
+    .about .container .img-wrapper{
         width: 100%;
+        flex-wrap: wrap;
+    }
+    .about .container {
+        text-align: center;
+        align-items: center;
+    }
+    .about .container .img-wrapper .imgbx.small{
+        width: 250px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .menu .wrapper{
+        flex-direction: column;
+    }
+    .menu .wrapper .imgbx{
+        width: 100%;
+        margin-top: 30px;
     }
     
 }
