@@ -375,5 +375,15 @@ header nav .icons .fa:hover{
         max-width: 60%;
         
     }
+    .about .container{
+        flex-direction: column;
+    }
+    .about .container .text{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about .container .img-wrapper{{
+        width: 100%;
+    }
     
 }
