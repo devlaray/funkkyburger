@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkky</title>
+    <link rel="stylesheet" href="funkky.css">
+    <link rel="shortcut icon" href="images/shortcut-logo.png">
+
+    <!-- --------------font awesome link-------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    --------------google font link--------
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <nav>
+            <a href="#"><img src="images/logo-black.png" class="logo" alt="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#reserve">reserve</a></li>
+            </ul>
+            <i class="fa fa-bars" id="bar"></i>
+            
+            <div class="icons">
+                <i class="fa fa-search" id="search"></i>
+                <i class="fa fa-moon" id="theme"></i>
+            </div>
+
+        </nav>
+        
+    </header>
+    <div class="banner" id="home">
+        <div class="text">
+            <h3>best bugger is always here at affordable price</h3>
+        </div>
+    </div>
+    <!-- --------------about--------------------------- -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="text">
+                <span class="title"><span>a</span>bout us</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quaerat dolores modi ducimus excepturi non laudantium, quam, corporis minus vero odio recusandae a quos dolore ipsa eum. Doloremque rerum numquam explicabo aliquid dolores, voluptates quas nostrum dignissimos maxime, eligendi quaerat, soluta officia sunt repudiandae animi maiores. Quas provident ipsa aspernatur dolore at architecto voluptas eum expedita doloribus numquam quibusdam reiciendis debitis voluptate, delectus totam iste. Est incidunt similique autem quaerat rem sed doloremque nobis ullam beatae facere modi, consectetur ea laborum accusantium recusandae ipsam eum illum aliquam odio tempore vitae architecto! Accusantium possimus deleniti hic animi iste nisi libero nobis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum deleniti assumenda provident, corrupti, commodi autem fugiat sunt repellendus esse et veniam saepe exercitationem culpa officia dolores! Maxime commodi ducimus repellat cupiditate earum veritatis saepe officia sit, quisquam amet repudiandae vel eum itaque illo quo sapiente molestiae, nulla voluptatem minima?</p>
+                <a href="" class="btn">learn more</a>
+            </div>
+            <div class="img-wrapper">
+                <div class="imgbx">
+                    <img src="images/about1.png" alt="">
+                </div>
+                <div class="imgbx small">
+                    <img src="images/about2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- --------------chefs---------------------------     -->
+<section class="chef">
+    <span class="title">our <span>e</span>xperts</span>
+    <div class="container">
+        <div class="chefbx">
+            <div class="imgbx">
+                <img src="images/chef1.png" alt="">
+            </div>
+            <div class="info">
+                <h5>roe jonssy</h5>
+                <p>kitchen manager</p>
+            </div>
+        </div>
+        <div class="chefbx">
+            <div class="imgbx">
+                <img src="images/chef2.png" alt="">
+            </div>
+            <div class="info">
+                <h5>many rose</h5>
+                <p>asst.kitchen manager</p>
+            </div>
+        </div>
+        <div class="chefbx">
+            <div class="imgbx">
+                <img src="images/chef3.png" alt="">
+            </div>
+            <div class="info">
+                <h5>santo kalba</h5>
+                <p>cook</p>
+            </div>
+        </div>
+        <div class="chefbx">
+            <div class="imgbx">
+                <img src="images/chef4.png" alt="">
+            </div>
+            <div class="info">
+                <h5>erika bruno</h5>
+                <p>asst.cook</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- --------------menu--------------------------- -->
+    <section class="menu" id="menu">
+        <div class="wrapper">
+            <div class="imgbx">
+                <img src="images/menu 1.png" alt="">
+            </div>
+            
+            <div class="imgbx">
+                <img src="images/menu 2.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="contentbx">
+                
+            </div>
+        </div>
+        
+    </section>
+
+<script>
+    var header = document.querySelector('header');
+    var logo = document.querySelector('.logo');
+
+    window.addEventListener('scroll', function(){
+        header.classList.toggle('active', window.scrollY > 0);
+    })
+
+    
+    var search = document.querySelector('#search');
+    var theme = document.querySelector('#theme');
+    var title = document.querySelectorAll('.title');
+    var chef = document.querySelector('.chef');
+
+    theme.addEventListener('click', function(){
+        document.body.classList.toggle ('blacktheme');
+        theme.classList.toggle('fa-sun');
+        title.forEach((element) => {
+            element.classList.toggle('active');
+        })
+        chef.classList.toggle('active')
+        
+    })
+
+    var menu = document.querySelector('#bar');
+    var navlinks = document.querySelector('.nav-links');
+    menu.addEventListener('click', function(){
+        menu.classList.toggle('fa-times');
+        navlinks.classList.toggle('active')
+    })
+
+</script>    
+</body>
+</html>
